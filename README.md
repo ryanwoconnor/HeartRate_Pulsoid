@@ -9,6 +9,9 @@ This has been verified and working on an Amazon Linux 2 EC2 AMI and an m4.4 Larg
 To use this, first install node. On Amazon Linux 2 EC2 That looks like the following:
 
 ```
+sudo yum install -y epel-release curl
+curl --fail -sSL -o setup-nodejs https://rpm.nodesource.com/setup_6.x
+sudo bash setup-nodejs
 sudo yum install -y nodejs gcc-c++ make
 ```
 
