@@ -8,7 +8,8 @@ This has been verified and working on an Amazon Linux EC2 AMI.
 
 To use this, install node. On Linux Amazon EC2 That looks like the following:
 
-```sudo yum install -y nodejs gcc-c++ make
+```
+sudo yum install -y nodejs gcc-c++ make
 ```
 
 Then clone the repository to your local machine.
@@ -43,12 +44,14 @@ I'll have an attached video later on with information on how to find all of thos
 
 To run the script you'll simply issue the command:
 
-```node scrape.js
+```
+node scrape.js
 ```
 
 You should see the following output:
 
-```{ message: { heartrate: '146' } }
+```
+{ message: { heartrate: '146' } }
 Sending payload { message: { heartrate: '146' } }
 Response from Splunk { text: 'Success', code: 0 }
 ```
