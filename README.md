@@ -20,14 +20,14 @@ You'll need your HTTP Event Collector Token from Splunk, The HTTP Event Collecto
 
 Within the script you'll see three strings:
 
-your-pulsoid-url
-http://your-HEC-URL:8088
-your-token-here
+* your-pulsoid-url
+* http://your-HEC-URL:8088
+* your-token-here
 
 You'll want to replace :
 
-*"your-token-here" with your HTTP Event Collector Token
-*http://your-HEC-URL:8088 with your HTTP Event Collector URL
-*your-pulsoid-url with your pulsoid URL
+* "your-token-here" with your HTTP Event Collector Token
+* http://your-HEC-URL:8088 with your HTTP Event Collector URL
+* your-pulsoid-url with your pulsoid URL
 
 I'll have an attached video later on with information on how to find all of those.
