@@ -6,19 +6,26 @@ This simple project is used to scrape data from a pulsoid URL and place it into 
 This has been verified and working on an Amazon Linux EC2 AMI. 
 
 
-To use this, install node. 
+To use this, install node. On Linux Amazon EC2 That looks like the following:
+
+```sudo yum install -y nodejs gcc-c++ make
+```
 
 Then clone the repository to your local machine.
 
-CD into the HeartRate_Pulsoid directory
+1. CD into the HeartRate_Pulsoid directory
 
-Run npm install
+2. Run npm install
 
-Modify the file in three places. 
+3. Modify the scrape.js file in three places. Details below
 
-You'll need your HTTP Event Collector Token from Splunk, The HTTP Event Collector URL/Port, and your Pulsoid URL. 
+You'll need to collect three things. 
 
-Within the script you'll see three strings:
+1. your HTTP Event Collector Token from Splunk
+2. The HTTP Event Collector URL/Port
+3. your Pulsoid URL. 
+
+Within the script you'll see three strings to be replaced. 
 
 * your-pulsoid-url
 * http://your-HEC-URL:8088
@@ -31,3 +38,17 @@ You'll want to replace :
 * your-pulsoid-url with your pulsoid URL
 
 I'll have an attached video later on with information on how to find all of those.
+
+## Running the script
+
+To run the script you'll simply issue the command:
+
+```node scrape.js
+```
+
+You should see the following output:
+
+```{ message: { heartrate: '146' } }
+Sending payload { message: { heartrate: '146' } }
+Response from Splunk { text: 'Success', code: 0 }
+```
