@@ -1,0 +1,24 @@
+{
+  "name": "heartrate_pulsoid",
+  "version": "1.0.0",
+  "description": "Used for pulling heart rate data from pulsoid",
+  "main": "scrape.js",
+  "dependencies": {
+    "puppeteer": "^1.9.0",
+    "splunk-logging": "^0.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "scrape.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwoconnor/HeartRate_Pulsoid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanwoconnor/HeartRate_Pulsoid/issues"
+  },
+  "homepage": "https://github.com/ryanwoconnor/HeartRate_Pulsoid#readme"
+}
