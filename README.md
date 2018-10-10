@@ -1,18 +1,18 @@
 # HeartRate_Pulsoid
 
-This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor. 
+This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent. 
 
 
-This has been verified and working on an Amazon Linux EC2 AMI. 
+This has been verified and working on an Amazon Linux 2 EC2 AMI and an m4.4 Large. Though it should be fairly portable to other operating systems.  
 
 
-To use this, install node. On Linux Amazon EC2 That looks like the following:
+To use this, first install node. On Amazon Linux 2 EC2 That looks like the following:
 
 ```
 sudo yum install -y nodejs gcc-c++ make
 ```
 
-Then clone the repository to your local machine.
+Next, clone the repository to your local machine.
 
 1. CD into the HeartRate_Pulsoid directory
 
