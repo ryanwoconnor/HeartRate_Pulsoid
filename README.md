@@ -1,6 +1,6 @@
 # HeartRate_Pulsoid
 
-This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent.
+This simple project is used to scrape data from a Pulsoid URL (https://pulsoid.net/) and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent.
 
 
 This has been verified and working on the following..
@@ -63,6 +63,14 @@ And finally run:
 source ~/.bash_profile
 ```
 
+## Getting a Pulsoid URL
+
+1. Once you sign up for Pulsoid (https://pulsoid.net) you can go into the Configuration Page. 
+
+2. From the configuration page click on "configure" for the widget "Heart rate(beats per minute) widget"
+
+3. From this widget, copy the URL for for the Widget
+
 
 ## General Instructions for downloading and Using the Package on all Operating Systems
 Next, clone the repository to your local machine.
@@ -75,9 +83,9 @@ Next, clone the repository to your local machine.
 
 You'll need to collect three things. 
 
-1. your HTTP Event Collector Token from Splunk
+1. Your HTTP Event Collector Token from Splunk
 2. The HTTP Event Collector URL/Port
-3. your Pulsoid URL. 
+3. Your Pulsoid URL. 
 
 Within the script you'll see three strings to be replaced. 
 
