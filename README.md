@@ -1,11 +1,31 @@
 # HeartRate_Pulsoid
 
-This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent. 
+This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent.
 
 
-This has been verified and working on an Amazon Linux 2 EC2 AMI and an m4.4 Large. Though it should be fairly portable to other operating systems.  
+This has been verified and working on the following..
+
+| Operating System |
+| --- |
+| Amazon Linux 2 |
+| Ubuntu 16.04 |
 
 
+Though it should be fairly portable to other operating systems.
+
+
+## Prerequisite Instructions for Ubuntu 16.04
+To use this on Ubuntu 16.04, here are the instructions:
+
+```
+sudo apt-get install gdebi
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi google-chrome-stable_current_amd64.deb
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+## Prerequisite Instructions for Amazon Linux 2
 To use this, first install node. On Amazon Linux 2 EC2 That looks like the following:
 
 ```
@@ -44,6 +64,7 @@ source ~/.bash_profile
 ```
 
 
+## General Instructions for downloading and Using the Package on all Operating Systems
 Next, clone the repository to your local machine.
 
 1. CD into the HeartRate_Pulsoid directory
@@ -72,7 +93,7 @@ You'll want to replace :
 
 I'll have an attached video later on with information on how to find all of those.
 
-## Running the script
+## Running the script on all Operating Systems
 
 To run the script you'll simply issue the command:
 
