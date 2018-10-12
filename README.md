@@ -105,7 +105,8 @@ I'll have an attached video later on with information on how to find all of thos
 
 ## Running the script on all supported Operating Systems
 
-To run the script you'll simply issue the command:
+
+### To run the script once you'll simply issue the command from the HeartRate_Pulsoid directory:
 
 ```
 node scrape.js
@@ -117,4 +118,13 @@ You should see the following output:
 { message: { heartrate: '146' } }
 Sending payload { message: { heartrate: '146' } }
 Response from Splunk { text: 'Success', code: 0 }
+```
+
+### To schedule the script:
+
+Within the HeartRate_Pulsoid directory you'll see a file called heart.sh. This script will run 10 times and sleep 5 seconds between each run. So if you schedule this in cron to run every minute, it will run every 5 seconds of every day. This is what your crontab may look like. 
+
+
+```
+* * * * * bash /home/ec2-user/HeartRate_Pulsoid/heart.sh
 ```
