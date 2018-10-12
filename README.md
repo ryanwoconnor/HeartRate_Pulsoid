@@ -5,7 +5,7 @@ This simple project is used to scrape data from a Pulsoid URL (https://pulsoid.n
 
 This has been verified and working on the following..
 
-| Operating System |
+| Supported Operating Systems |
 | --- |
 | Amazon Linux 2 |
 | Ubuntu 16.04 |
@@ -72,7 +72,7 @@ source ~/.bash_profile
 3. From this widget, copy the URL for for the Widget
 
 
-## General Instructions for downloading and Using the Package on all Operating Systems
+## General Instructions for downloading and Using the Package on all supported operating Systems
 Next, clone the repository to your local machine.
 
 1. CD into the HeartRate_Pulsoid directory
