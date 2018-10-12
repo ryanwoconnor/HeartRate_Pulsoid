@@ -65,7 +65,9 @@ source ~/.bash_profile
 
 ## Getting a Pulsoid URL
 
-1. Once you sign up for Pulsoid (https://pulsoid.net) you can go into the Configuration Page. 
+It goes without saying that before you bother getting this URL, you should ensure you have a heartrate monitor. Up to date recommendations for a heart rate monitor can be found on the Pulsoid FAQ (https://pulsoid.net/faq). 
+
+1. Once you sign up for Pulsoid (https://pulsoid.net) and have a working heart rate monitor you can go into the Configuration Page. 
 
 2. From the configuration page click on "configure" for the widget "Heart rate(beats per minute) widget"
 
