@@ -1,11 +1,31 @@
 # HeartRate_Pulsoid
 
-This simple project is used to scrape data from a pulsoid URL and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent. 
+This simple project is used to scrape data from a Pulsoid URL (https://pulsoid.net/) and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent.
 
 
-This has been verified and working on an Amazon Linux 2 EC2 AMI and an m4.4 Large. Though it should be fairly portable to other operating systems.  
+This has been verified and working on the following..
+
+| Supported Operating Systems |
+| --- |
+| Amazon Linux 2 |
+| Ubuntu 16.04 |
 
 
+Though it should be fairly portable to other operating systems.
+
+
+## Prerequisite Instructions for Ubuntu 16.04
+To use this on Ubuntu 16.04, here are the instructions:
+
+```
+sudo apt-get install gdebi
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi google-chrome-stable_current_amd64.deb
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+## Prerequisite Instructions for Amazon Linux 2
 To use this, first install node. On Amazon Linux 2 EC2 That looks like the following:
 
 ```
@@ -43,7 +63,18 @@ And finally run:
 source ~/.bash_profile
 ```
 
+## Getting a Pulsoid URL
 
+It goes without saying that before you bother getting this URL, you should ensure you have a heartrate monitor. Up to date recommendations for a heart rate monitor can be found on the Pulsoid FAQ (https://pulsoid.net/faq). 
+
+1. Once you sign up for Pulsoid (https://pulsoid.net) and have a working heart rate monitor you can go into the Configuration Page. 
+
+2. From the configuration page click on "configure" for the widget "Heart rate(beats per minute) widget"
+
+3. From this widget, copy the URL for for the Widget
+
+
+## General Instructions for downloading and Using the Package on all supported operating Systems
 Next, clone the repository to your local machine.
 
 1. CD into the HeartRate_Pulsoid directory
@@ -54,9 +85,9 @@ Next, clone the repository to your local machine.
 
 You'll need to collect three things. 
 
-1. your HTTP Event Collector Token from Splunk
+1. Your HTTP Event Collector Token from Splunk
 2. The HTTP Event Collector URL/Port
-3. your Pulsoid URL. 
+3. Your Pulsoid URL. 
 
 Within the script you'll see three strings to be replaced. 
 
@@ -72,7 +103,7 @@ You'll want to replace :
 
 I'll have an attached video later on with information on how to find all of those.
 
-## Running the script
+## Running the script on all supported Operating Systems
 
 To run the script you'll simply issue the command:
 
