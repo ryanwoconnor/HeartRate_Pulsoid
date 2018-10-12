@@ -101,7 +101,7 @@ You'll want to replace :
 
 I'll have an attached video later on with information on how to find all of those.
 
-## Running the script on all Operating Systems
+## Running the script on all supported Operating Systems
 
 To run the script you'll simply issue the command:
 
