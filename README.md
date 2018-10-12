@@ -3,6 +3,22 @@
 This simple project is used to scrape data from a Pulsoid URL (https://pulsoid.net/) and place it into Splunk. It was created by Ryan O'Connor and Tony Vincent.
 
 
+Table of Contents
+=================
+
+   * [HeartRate Pulsoid Instructions](#heartrate_pulsoid)
+      * [Supported Operating Systems](#supported-operating-systems)
+      * [Prerequisite Instructions for Ubuntu 16.04](#prerequisite-instructions-for-ubuntu-1604)
+      * [Prerequisite Instructions for Amazon Linux 2](#prerequisite-instructions-for-amazon-linux-2)
+      * [Getting a Pulsoid URL](#getting-a-pulsoid-url)
+      * [Downloading and Using the Package on all supported operating Systems](#downloading-and-using-the-package-on-all-supported-operating-systems)
+      * [Running the script on all supported Operating Systems](#running-the-script-on-all-supported-operating-systems)
+         * [Run the script once:](#run-the-script-once)
+         * [Schedule the script:](#schedule-the-script)
+         
+         
+## Supported Operating Systems
+
 This has been verified and working on the following..
 
 | Supported Operating Systems |
@@ -74,14 +90,15 @@ It goes without saying that before you bother getting this URL, you should ensur
 3. From this widget, copy the URL for for the Widget
 
 
-## General Instructions for downloading and Using the Package on all supported operating Systems
-Next, clone the repository to your local machine.
+## Downloading and Using the Package on all supported operating Systems
 
-1. CD into the HeartRate_Pulsoid directory
+1. Clone the repository to your local machine.
 
-2. Run npm install
+2. CD into the HeartRate_Pulsoid directory
 
-3. Modify the scrape.js file in three places. Details below
+3. Run npm install
+
+4. Modify the scrape.js file in three places. Details below
 
 You'll need to collect three things. 
 
@@ -106,7 +123,9 @@ I'll have an attached video later on with information on how to find all of thos
 ## Running the script on all supported Operating Systems
 
 
-### To run the script once you'll simply issue the command from the HeartRate_Pulsoid directory:
+### Run the script once:
+
+Simply run the following command from the HeartRate_Pulsoid Directory
 
 ```
 node scrape.js
@@ -120,7 +139,7 @@ Sending payload { message: { heartrate: '146' } }
 Response from Splunk { text: 'Success', code: 0 }
 ```
 
-### To schedule the script:
+### Schedule the script:
 
 Within the HeartRate_Pulsoid directory you'll see a file called heart.sh. This script will run 10 times and sleep 5 seconds between each run. So if you schedule this in cron to run every minute, it will run every 5 seconds of every day. This is what your crontab may look like. 
 
